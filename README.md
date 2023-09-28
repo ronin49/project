@@ -1,3 +1,1 @@
-```sh
-ln .emacs ~/.emacs
-```
+emacs
