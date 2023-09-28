@@ -1,6 +1,3 @@
-;```emacs
-
-
 (message "hi Olegator!")
 
 
@@ -39,4 +36,3 @@
  )
 
 
-;```
