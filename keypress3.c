@@ -23,6 +23,24 @@ int main (int argc, char *argv[])
   g_signal_connect (G_OBJECT (window), "destroy", G_CALLBACK (gtk_main_quit), NULL);
   g_signal_connect (G_OBJECT (window), "key_press_event", G_CALLBACK (on_key_press), NULL);
 
+
+GtkWidget *view;
+GtkTextBuffer *buffer;
+
+view = gtk_text_view_new ();
+
+buffer = gtk_text_view_get_buffer (GTK_TEXT_VIEW (view));
+
+gtk_text_buffer_set_text (buffer, "Hello, this is some text", -1);
+
+/* Now you might put the view in a container and display it on the
+ * screen; when the user edits the text, signals on the buffer
+ * will be emitted, such as "changed", "insert_text", and so on.
+ */
+
+
+gtk_container_add(GTK_CONTAINER(window), view);  
+
   gtk_widget_show_all (window);
 
   gtk_main ();
