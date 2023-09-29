@@ -1,3 +1,6 @@
+;kill-buffer C-x k
+
+
 (message "hi Olegator!")
 
 
