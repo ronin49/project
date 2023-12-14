@@ -2,7 +2,7 @@
 
 int main(int argc, char *argv[]) {
 
-  GtkWidget *window;
+  GtkWidget  *window;
 
   gtk_init(&argc, &argv);
 
